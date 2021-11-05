@@ -1,10 +1,9 @@
-fetch('http://localhost:3000')
+fetch('https://morning-savannah-06814.herokuapp.com')
 .then(response => response.json())
 .then(json=> {
-
   console.log(json);
     for(let i=0;i<json.length;i=i+parseInt(json[i].types)+1){
-        console.log("i:" + i);
+       
         var mydiv= document.createElement("div")
         mydiv.className="col-lg-6 menu-item filter-"+json[i].kind
        var img=document.createElement("img");
